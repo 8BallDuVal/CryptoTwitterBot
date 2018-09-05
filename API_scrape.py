@@ -40,11 +40,13 @@ final_pricedata = (pricedata[0] +
                   pricedata[10])
 
 
-    
-# consumer_key = 'JHujYZhB3EZKOUG8BeVC9dXpF'
-# consumer_secret = 'Q9PJcESP9AQLLAT8vn5JioyXY1Yf2QWR3pIX3CrrZAl97qlEMc'
-# access_token = '1006253589763969024-ecScdz9goBVFNBSWrZXTOibylLIE1k'
-# access_token_secret = 'lEmflohmqtcBSzysVP0FgghKUvkLUIrkhpmdVgOqLqqxT'
+# This information is found after creating an account at https://developer.twitter.com/
+# See more information at the following link: http://docs.tweepy.org/en/v3.5.0/api.html#status-methods 
+# This tutorial may also be helpful: https://scotch.io/tutorials/build-a-tweet-bot-with-python
+# consumer_key = ''
+# consumer_secret = ''
+# access_token = ''
+# access_token_secret = ''
 # auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 # auth.set_access_token(access_token, access_token_secret)
 # api = tweepy.API(auth)
