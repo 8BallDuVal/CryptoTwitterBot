@@ -1,4 +1,4 @@
-#This example uses Python 2.7 and the python-request library.
+# This program uses Python 3.6, along with the tweepy, requests, and json libraries.
 import tweepy
 from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
