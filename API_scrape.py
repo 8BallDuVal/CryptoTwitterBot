@@ -50,18 +50,6 @@ for i in range(len(symbols)):
 final_pricedata = ''.join([item for item in pricedata])
 final_pricedata = (final_pricedata[:277] + '...') if len(final_pricedata) > 280 else final_pricedata
 
-final_pricedata = (pricedata[0] + 
-                  pricedata[1] +
-                  pricedata[2] +
-                  pricedata[3] +
-                  pricedata[4] +
-                  pricedata[5] +
-                  pricedata[6] +
-                  pricedata[7] +
-                  pricedata[8] +
-                  pricedata[9] +
-                  pricedata[10])
-
 consumer_key = ''
 consumer_secret = ''
 access_token = ''
