@@ -33,9 +33,10 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: execute python script
-        run: python static_license_count_site.py
+        run: python API_scrape_github_actions.py
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
           CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
           CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
+          CMC_KEY: ${{ secrets.CMC_KEY }}
