@@ -4,10 +4,10 @@ from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
 import os
 
-consumer_key_ghs = os.environ.get("CONSUMER_KEY2")
-consumer_secret_ghs = os.environ.get("CONSUMER_SECRET2")
-access_token_ghs = os.environ.get("ACCESS_TOKEN2")
-access_token_secret_ghs = os.environ.get("ACCESS_TOKEN_SECRET2")
+consumer_key_ghs = os.environ.get("CONSUMER_KEY")
+consumer_secret_ghs = os.environ.get("CONSUMER_SECRET")
+access_token_ghs = os.environ.get("ACCESS_TOKEN")
+access_token_secret_ghs = os.environ.get("ACCESS_TOKEN_SECRET")
 cmc_key_ghs = os.environ.get("CMC_KEY")
 
 def send_request(fiat_currency):
@@ -60,10 +60,10 @@ eur_text = '€'+ str(eur_data[0]) +' ('+ eur_data[1]+' in the past 24 hours)\n'
 pricedata = usd_text + gbp_text+ eur_text + '\n$ADA'
 
 
-consumer_key = str(consumer_key_ghs)
-consumer_secret = str(consumer_secret_ghs)
-access_token = str(access_token_ghs)
-access_token_secret = str(access_token_secret_ghs)
+consumer_key = consumer_key_ghs
+consumer_secret = consumer_secret_ghs
+access_token = access_token_ghs
+access_token_secret = access_token_secret_ghs
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
