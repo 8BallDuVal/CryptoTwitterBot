@@ -19,7 +19,7 @@ def send_request(fiat_currency):
     }
     headers = {
     'Accepts': 'application/json',
-    'X-CMC_PRO_API_KEY': '',
+    'X-CMC_PRO_API_KEY': cmc_key_ghs,
     }
 
     session = Session()
