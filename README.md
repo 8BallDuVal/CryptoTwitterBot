@@ -1,4 +1,4 @@
-# CryptoTwitterBot 
+# CryptoTwitterBot  
 Obtaining the prices of the top 10 CryptoCurrencies via the CoinMarketCap API.
 
 As of right now, the file will only print the prices of the top ten CryptoCurrencies. To set up the Twitter API section, start by creating an account at the following website: https://developer.twitter.com/ 
