@@ -58,15 +58,24 @@ for i in range(len(symbols)):
 final_pricedata = ''.join([item for item in pricedata])
 final_pricedata = (final_pricedata[:277] + '...') if len(final_pricedata) > 280 else final_pricedata
 
-consumer_key = consumer_key_ghs
-consumer_secret = consumer_secret_ghs
-access_token = access_token_ghs
-access_token_secret = access_token_secret_ghs
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
-api = tweepy.API(auth)
+#consumer_key = consumer_key_ghs
+#consumer_secret = consumer_secret_ghs
+#access_token = access_token_ghs
+#access_token_secret = access_token_secret_ghs
+#auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+#auth.set_access_token(access_token, access_token_secret)
+#api = tweepy.API(auth)
 
 
-api.update_status(final_pricedata)
+#api.update_status(final_pricedata)
 
 #print(final_pricedata)
+
+
+client = tweepy.Client(consumer_key=consumer_key_ghs,
+                       consumer_secret=consumer_secret_ghs,
+                       access_token=access_token_ghs,
+                       access_token_secret=access_token_secret_ghs)
+
+# Replace the text with whatever you want to Tweet about
+response = client.create_tweet(text=final_pricedata)
